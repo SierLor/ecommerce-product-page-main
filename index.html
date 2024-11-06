@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+<body>
+
+  <main class="main-container">
+    <header class="header__container">
+      <div class="header__hamburguer">
+        <img src="./images/icon-menu.svg" alt="hamburguesa" class="header__open">
+        <img src="./images/logo.svg" alt="logo" class="header__logo">
+      
+      <ul class="header__nav">
+        <li class="header__links">Collections</li>
+        <li class="header__links">Men</li>
+        <li class="header__links">Women</li>
+        <li class="header__links">About</li>
+        <li class="header__links">Contact</li>
+      </ul>
+      </div>
+
+      
+
+      <div class="header__carrito">
+        <img src="./images/icon-cart.svg" alt="cart" class="header__cart">
+        <div class="header__carrito-numero">3</div>
+        <img src="./images/image-avatar.png" alt="avatar" class="header__avatar">
+      </div>
+
+
+      <!-- -----------------HEADER MODAL_------------ -->
+      <section class="header__background">
+       
+
+        <ul class="header__modal">
+          <img src="./images/icon-close.svg" alt="close" class="header__close">
+          <li class="header__links-modal">Collections</li>
+          <li class="header__links-modal">Men</li>
+          <li class="header__links-modal">Women</li>
+          <li class="header__links-modal">About</li>
+          <li class="header__links-modal">Contact</li>
+        </ul>
+
+      </section>
+
+    </header>
+
+
+    <!-------------SECCION PRINCIPAL----------- -->
+    <div class="seccion__principal">
+    <section class="first__section">
+      <div class="first__section-background">
+        <div class="first__section-btn">
+        <img src="./images/icon-previous.svg" alt="previous" class="first__section-mas">
+        <img src="./images/icon-next.svg" alt="next" class="first__section-menos">
+      </div>
+      </div>
+
+      <div class="first__section__images">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="imagenes" class="first__section-tumbails">
+        <img src="./images/image-product-2-thumbnail.jpg" alt="imagenes" class="first__section-tumbails">
+        <img src="./images/image-product-3-thumbnail.jpg" alt="imagenes" class="first__section-tumbails">
+        <img src="./images/image-product-4-thumbnail.jpg" alt="imagenes" class="first__section-tumbails">
+      </div>
+    </section>
+
+
+
+    <!-------------SEGUNDA SECCION----------- -->
+
+    <section class="second__section">
+      <p class="second_section-parrafo">Sneaker Company</p>
+      <h4 class="second__section-title">Fall Limited Edition Sneakers</h4>
+      <p class="second__section-parrafo2">These low-profile sneakers are your perfect casual wear companion. Featuring adurable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+    
+      <div class="second__section-precios">
+        
+        <div class="second__section-descuento">
+          <p class="second__section-parrafo">$125.00 </p><span class="span">50%</span>
+        </div>
+
+        <div class="second__section-tachado">
+          <p class="second__section-p">$250.00</p>
+        </div>
+
+      </div>
+
+
+      <div class="second__section-agregar">
+          <div class="second__section-contador">
+            <img src="./images/icon-minus.svg" alt="menos" class="second__section-menos">
+            <p class="second__section-contador2">0</p>
+            <img src="./images/icon-plus.svg" alt="mas" class="second__section-mas">
+          </div>
+
+          <div class="second__section-button">
+            <button class="btn"><img src="./images/icon-cart copy.svg"> Add to cart</button>
+          </div>
+      </div>
+    
+    </section>
+  </div>
+
+
+
+    <!-------------MODAL CARRITO----------- -->
+
+    <section class="modal__carrito">
+      <h4 class="modal__carrito-info">Cart</h4>
+
+      <div class="modal__carrito-precio">
+        <img class="modal__carrito-img" src="./images/image-product-1-thumbnail.jpg">
+        <div class="modal__carrito-nombre">
+          <p class="modal__carrito-parrafo">Fall Limited Edition Sneakers</p>
+          <p class="modal__carrito-parrafo2">$125.00 x 3 <span class="span-modal">$375.00</span></p>
+         </div> 
+          <div class="modal__carrito-papelera">
+          <img class="modal__carrito-delete" src="./images/icon-delete.svg" alt="delete">
+        </div>
+        
+      </div>
+      <button class="btn">Checkout</button>
+    </section>
+
+    <!-------------MODAL IMAGENES----------- -->
+    <section class="modal__imagenes">
+      <img class="modal__imagenes-img" src="./images/icon-close copy.svg" alt="closed">
+      <div class="modal__imagenes-background">
+        <div class="modal__imagenes-flechas">
+        <img src="./images/icon-previous.svg" alt="previous" class="modal__imagenes-mas">
+        <img src="./images/icon-next.svg" alt="next" class="modal__imagenes-menos">
+        </div>
+      </div>
+
+      <div class="modal__imagenes-div">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="imagenes" class="modal__imagenes-tumbails">
+        <img src="./images/image-product-2-thumbnail.jpg" alt="imagenes" class="modal__imagenes-tumbails">
+        <img src="./images/image-product-3-thumbnail.jpg" alt="imagenes" class="modal__imagenes-tumbails">
+        <img src="./images/image-product-4-thumbnail.jpg" alt="imagenes" class="modal__imagenes-tumbails">
+      </div>
+    </section>
+
+
+  </main>
+
+ 
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
