@@ -119,6 +119,11 @@ body{
 
 .header__close{
     margin-bottom: 55px;
+    cursor: pointer;
+}
+
+.header__close.active{
+    display: none;
 }
 
 .header__links-modal{
@@ -292,12 +297,22 @@ body{
     box-shadow: 10px 10px 50px var(--Very-dark-blue);
 }
 
+.modal__carrito.active{
+    display: block;
+}
+
 .modal__carrito-info{
     font-size: .9em;
     color: var(--Very-dark-blue);
     padding-bottom: 20px;
     border-bottom: 1px solid var(--Dark-grayish-blue);
     margin-bottom: 25px;
+}
+
+.info-empty{
+    margin-top: 65px;
+    text-align: center;
+    color: var(--Dark-grayish-blue);
 }
 
 .modal__carrito-precio{
@@ -337,6 +352,20 @@ body{
 }
 
 
+.btn1{
+    width: 325px;
+    height: 50px;
+    border: none;
+    background-color: var(--Orange);
+    border-radius: 8px;
+    color: var(--Very-dark-blue);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    background-color: rgba(255, 166, 0, 0.721);
+}
 
 
 
@@ -527,6 +556,27 @@ body{
 
 }
 
+
+/* ---------------------MODAL CARRITO-------------------- */
+.modal__carrito{
+    top: 95px;
+    left: 770px;
+}
+
+.btn1{
+    width: 325px;
+    height: 50px;
+    border: none;
+    background-color: var(--Orange);
+    border-radius: 8px;
+    color: var(--Very-dark-blue);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    background-color: rgba(255, 166, 0, 0.721);
+}
 
 /* ---------------------MODAL IMAGENES-------------------- */
 
